@@ -15,9 +15,13 @@
   gap: 30px;
 }
 
+
+/* ===================== */
+/* calculator components */
+/* ===================== */
 .calc-component {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   background-color: #f0f0f0;
   border: solid 1px black;
   gap: 2px;
@@ -29,11 +33,28 @@
   border: none;
 }
 
-input.calc-component:focus {
-  border: 1px solid black;
+input:focus {
+  outline: none;
+  border: none;
   box-shadow: none;
 }
 
+
+/* ================================= */
+/* calculator number input components*/
+/* ================================= */
+div.numInput > input.calc-component {
+  font-size: 1.5rem;
+}
+
+div.numInput > input.calc-component:focus {
+  border: #f1ae06 3px solid;
+} 
+
+
+/* ==================== */
+/* calculator operators */
+/* ==================== */
 div.operators {
   background-color: burlywood;
 }
@@ -80,7 +101,11 @@ span.equals-button {
   font-size: 2.5rem;
   font-weight: 400;
   height: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+#result {
+  font-size: 1.5rem;
+  margin-top: 15px;
 }
 
 .reset > button {
