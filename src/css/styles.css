@@ -22,6 +22,7 @@
   border: solid 1px black;
   gap: 2px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .calc-component:nth-child(2) {
@@ -48,13 +49,10 @@ div.operators {
   align-items: center;
   font-size: 1.2rem;
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
+  cursor: pointer;
 }
 
-.ind-op {
-  margin-bottom: 3px;
-}
+
 
 .calc-operator:nth-child(1) .ind-op {
   font-size: 2rem;

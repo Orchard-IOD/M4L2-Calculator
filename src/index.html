@@ -14,70 +14,69 @@
   <body
     class="d-flex justify-content-center align-items-center vh-100 bg-light"
   >
-
     <div class="container">
       <div class="card">
         <div class="card-body text-center">
           <h1 class="card-title">Simple Calculator</h1>
 
-
           <div
             class="calc-component-container d-flex justify-content-center align-items-center"
           >
-            
             <div class="num1">
               <input
+                class="calc-component"
                 type="number"
-                class="calc-component form-control"
                 name=""
-                id=""
+                id="num1"
+                value="0"
               />
             </div>
 
             <div
               class="operators calc-component d-flex flex-wrap justify-content-center"
             >
-              <div class="calc-operator" onclick="sign('add')">
+              <div class="calc-operator" onclick="setOperator('add')">
                 <span class="ind-op">+</span>
               </div>
-              <div class="calc-operator" onclick="sign('subtract')">
+              <div class="calc-operator" onclick="setOperator('subtract')">
                 <span class="ind-op">-</span>
               </div>
-              <div class="calc-operator" onclick="sign('divide')">
+              <div class="calc-operator" onclick="setOperator('divide')">
                 <span class="ind-op">/</span>
               </div>
-              <div class="calc-operator" onclick="sign('multiply')">
+              <div class="calc-operator" onclick="setOperator('multiply')">
                 <span class="ind-op">x</span>
               </div>
             </div>
 
-
             <div class="num2">
               <input
+                class="calc-component"
                 type="number"
                 name=""
-                id=""
-                class="calc-component form-control"/>
+                id="num2"
+                value="0"
+              />
             </div>
 
-
-            <div class="calc-component d-flex justify-content-center align-items-center">
-              <span class="equals-button">=</span>
+            <div
+              class="calc-component d-flex justify-content-center align-items-center"
+            >
+              <span class="equals-button" onclick="equation()">=</span>
             </div>
 
-
-            <div class="result calc-component"></div>
-
+            <div class="result calc-component">
+              <p id="result"></p>
+            </div>
           </div>
-
 
           <div class="reset">
             <button>RESET</button>
           </div>
-
-
         </div>
       </div>
     </div>
+
+    <script src="./js/calc-script.js"></script>
   </body>
 </html>

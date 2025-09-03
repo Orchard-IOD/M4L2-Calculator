@@ -8,4 +8,4 @@ get the result displayed, and reset to clear it.
 
 Simple Design:
 
-![Calculator flow and lo-fi design](./assets/Lab2%20-Calc%20flow.png)
+![Calculator flow and lo-fi design](./src/assets/Lab2%20-Calc%20flow.png)
